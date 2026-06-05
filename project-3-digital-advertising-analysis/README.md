@@ -1,4 +1,10 @@
 # Phân Tích Hiệu Suất Quảng Cáo Digital (Digital Advertising Performance Analysis)
+## Overview
+
+- **Goal:** Analyze digital ad performance across Google Ads, Meta Ads, and TikTok Ads to optimize budget allocation.
+- **Tools:** Python (Pandas), Power BI
+- **Dataset:** Multi-platform ad data — $11.11M in total spend
+- **Key result:** Attributed $54.18M in revenue (avg. ROAS: 6.45). Identified EdTech as highest-ROI industry and UAE/Australia as top markets.
 
 ## Mục tiêu
 Phân tích hiệu quả của các chiến dịch quảng cáo digital trên nhiều nền tảng 
