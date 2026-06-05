@@ -1,4 +1,10 @@
 # TikTok Creator Engagement Dashboard
+## Overview
+
+- **Goal:** Analyze engagement patterns across 694 TikTok creators to identify what drives performance.
+- **Tools:** Power BI
+- **Dataset:** 1,000 top TikTok creators
+- **Key result:** Found that micro-creators (under 100K followers) had the most stable engagement rate (avg. 1.08), outperforming larger accounts consistently.
 
 ## Mục tiêu
 Phân tích mức độ tương tác của các TikTok Creator để tìm ra các yếu tố ảnh hưởng đến hiệu suất nội dung và mức độ tương tác của người xem.
