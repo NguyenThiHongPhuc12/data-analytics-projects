@@ -1,4 +1,8 @@
 # Data Analytics Portfolio
+## About
+
+A collection of data analytics projects covering EDA, machine learning, 
+and business intelligence dashboards. Built with Python and Power BI.
 
 Repository này chứa các project phân tích dữ liệu và dashboard được thực hiện trong quá trình học và thực hành Data Analytics.
 
