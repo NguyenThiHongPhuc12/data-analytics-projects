@@ -56,7 +56,6 @@ plt.show()
 
 df.groupby('churn')['balance'].describe()
 
-
 # mối liên hệ giữa tuổi và churn
 sns.boxplot(x='churn', y='age', data=df)
 plt.title("Độ tuổi theo trạng thái rời bỏ")
@@ -71,10 +70,8 @@ plt.xlabel("Gender")
 plt.ylabel("Count")
 plt.show()
 
-
 churn_by_gender = df.groupby('gender')['churn'].mean()
 print(churn_by_gender)
-
 
 # So sánh tỷ lệ rời bỏ ở các quốc gia
 sns.countplot(data=df, x='country', hue='churn')
@@ -85,14 +82,12 @@ plt.show()
 
 df.groupby('country')['churn'].mean().sort_values(ascending=False)
 
-
 # So sánh tỷ lệ rời bỏ với khách hàng có credit_score
 sns.boxplot(x='churn', y='credit_score', data=df)
 plt.title("Tỷ lệ churn với credit_score")
 plt.show()
 
 df.groupby('churn')['credit_score'].describe()
-
 
 # Khách có credit_card có rời bỏ không ?
 sns.countplot(data=df, x='credit_card', hue='churn')
@@ -115,7 +110,6 @@ df.groupby('churn')['tenure'].describe()
 # kiểm tra outlier by churn
 num_cols = ['credit_score', 'age', 'tenure', 'balance', 'products_number', 'estimated_salary']
 
-
 for col in num_cols:
     plt.figure(figsize=(8, 4))
     sns.boxplot(data=df, x='churn', y=col)
@@ -131,9 +125,7 @@ plt.ylabel("Số lượng khách hàng")
 plt.show()
 
 df.churn.value_counts()
-
 X
-
 y
 
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
@@ -154,22 +146,15 @@ _transformed = pd.DataFrame(_enc.transform(X[['country']]), columns=_enc.get_fea
 # concat
 X.drop(columns='country', inplace=True)
 X = pd.concat([X, _transformed], axis=1)
-
-
 X
 
 X.drop(columns=['customer_id'], inplace=True) # drop cột customer_id vì không cần thiết
-
-
 X
 
 # scaler
 _scaler = StandardScaler()
 _scaler.fit(X)
 X = pd.DataFrame(_scaler.transform(X), columns=X.columns)
-
-
-
 X
 
 from sklearn.model_selection import train_test_split
