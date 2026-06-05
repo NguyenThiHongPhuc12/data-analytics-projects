@@ -1,4 +1,10 @@
 # Bank Customer Churn Analysis
+## Overview
+
+- **Goal:** Predict which banking customers are likely to churn using ML models.
+- **Tools:** Python, Pandas, Scikit-learn, XGBoost
+- **Dataset:** 10,000 customer records
+- **Key result:** Identified top churn drivers (geography, age group, product usage) to prioritize retention actions.
 
 ## Mục tiêu
 Phân tích và dự đoán khả năng khách hàng rời bỏ ngân hàng bằng các mô hình Machine Learning.
